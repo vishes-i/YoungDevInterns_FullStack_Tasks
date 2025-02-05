@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+    <head>
+ <title>web page</title>   
+ <style>
+    a{
+        text-decoration: none;
+    }
+section p:first-child{font: 1em sans-serif;font-weight: bolder;font-size: xx-large;font-variant: small-caps;}
+   ul.nav{border:10px #3f3b3b solid;padding:10px;margin:0px ;width:1500px;background-color: #333;display: grid;grid-template-columns:repeat(7,1fr) ;font-weight: bolder;font: 1em sans-serif;text-decoration:none ;}
+ section{text-align: center ;text-decoration: solid; margin-top:35px ;}
+   ul.navbar{border:0px #444 solid; padding:10px;margin:0px;width:1500px;background-color: #444;display:grid;grid-template-columns:repeat(14,1fr) ; font-weight:bolder;font: 1em sans-serif; text-decoration: none;}
+ 
+  div.demo12{background-color:royalblue;padding:1rem ;text-align:center;}
+BODY{background-color:#417ded ; color: #FFF;}
+FOOTER{border:0PX SOLID #333;padding:15PX ;width:1500PX;display:grid;grid-gap: 20px ;font-variant: small-caps;grid-template-columns: repeat(5,1fr);text-align: left;
+margin-top: 400px;}
+
+.navbar li a:link {
+    color:red;
+}
+
+/* visited link */
+.navbar li a:visited {
+    color: green;
+    
+}
+
+/* mouse over link */
+.navbar li a:hover {
+    color: hotpink;
+    display: block; background-color:darkmagenta;
+}
+
+/* selected link */
+.navbar li a:active {
+    color: blue;
+    
+}
+.nav li a:link {
+    color:red;
+}
+
+/* visited link */
+.nav li a:visited {
+    color: hwb(49 0% 50%);
+    
+}
+
+/* mouse over link */
+.nav li a:hover {
+    color: hotpink;
+    display: block; background-color: darkorchid;
+}
+
+/* selected link */
+.nav li a:active {
+    color: blue;
+    
+}
+ul li:first-child{font: size 1.5rem;padding-bottom: 0.8rem;font-weight: bolder;font: 1em sans-serif;border-bottom:#444 solid 1px ; margin-bottom: 1rem ;}
+.main input[type='text'] {
+   width: 88%;
+   position: relative;
+   height: 80px;
+   top: 5px;
+   text-align: right;
+   padding: 3px 6px;
+   outline: none;
+   font-size: 40px;
+   border: 5px solid black;
+   display: flex;
+   margin: auto;
+   border-radius: 6px;
+   color: black;
+}
+.bttn input[type='button']{
+   width:90px;
+   padding: 2px;
+   margin: 2px 0px;
+   position:relative;
+   left: 13px;
+   top: 20px;
+   height: 60px;
+   cursor: pointer;
+   font-size: 18px;
+   transition: 0.5s;
+   background-color: #495250;
+   border-radius: 6px;
+   color: white;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.main{ 
+    margin-left: 560px;
+   width: 400px;
+   height: 450px;
+   background-color: white;
+   position: absolute;
+   border: 5px solid black;
+   border-radius: 6px; }
+</style>
+  <script>
+   function Solve(val) {
+      var v = document.getElementById('res');
+      v.value += val;
+   }
+   function Result() {
+      var num1 = document.getElementById('res').value;
+      var num2 = eval(num1);
+      document.getElementById('res').value = num2;
+   }
+   function Clear() {
+      var inp = document.getElementById('res');
+      inp.value = '';
+   }
+   function Back() {
+      var ev = document.getElementById('res');
+      ev.value = ev.value.slice(0,-1);
+   }
+</script>
+
+</head>
+
+ <header>
+<h1>
+    <Marquee style="background-color: blue; color: #0b0b0b;">
+        WELCOME TO LANDING PAGE VIEW
+    </Marquee>
+    </h1>
+<nav>
+   <fieldset>
+ <ul class="nav"  style=" background-color: black;">
+ <li><a href="#">COURSE</a></li>   
+ <li><a href="#">TUTORIAL</a></li> 
+ <li><a href="#">CONTEST</a></li> 
+ <li><a href="#">JOBS</a></li> 
+ <li><a href="#">PRACTICE</a></li>
+ <li><a href="#">ABOUT</a></li> 
+ <li><a href="#">CONTACT</a</li>  
+ </ul> 
+   </fieldset>
+ <fieldset>
+ <UL class="navbar" style="background-color: black;">
+    <li><a href="#">HIRING CHALLENGE</a></li> 
+    <li><a href="#">TRENDING NOW</a></li> 
+    <li><a href="#"> DSA</a></li> 
+    <li><a href="#">JAVA</a></li> 
+    <li><a href="#">PYTHON</a></li> 
+    <li><a href="#">C++</a></li> 
+    <li><a href="#">C</a></li> 
+    <li><a href="#">PHP</a></li> 
+    <li><a href="#">CSS</a></li> 
+    <li><a href="#">HTML</a></li> 
+    <li><a href="#">DATA STRUCTURE</a></li> 
+    <li><a href="#">AlGORITHMS</a></li> 
+ </UL>  
+ </fieldset>
+</nav>
+ </header>
+ <br>
+ <br>
+<section>
+<p>Provisioning and Configuration Module:</p>
+    <p>It is the lowest level of cloud and typically resides on bare hardware (as a firmware) or on the top of the hypervisor layer. Its function is to abstract the underlying hardware and provide a standard mechanism to spawn instance of virtual machine on demand. It also handles the post-configuration of the operating systems and applications residing on the VM</p>
+</section>
+<section>
+    <p>Monitoring and Optimization:</p>
+      <p>  This layer handles the monitoring of all services, storage, networking and applications components in cloud. Based on the statistics, it could perform routine functions that optimize the behavior of the infrastructure components and provide relevant data to the cloud administrator to further optimize the configuration for maximum utilization and performance,</p>
+</section>  
+<section> 
+      <p> Metering and Chargeback:</p>
+      <p> This layer provides functions to measure the usage of resources in cloud. The metering module collects all the utilization data per domain per use. This module gives the cloud administrator enough data to measure ongoing utilization of resources and to create invoices based on the usage on a periodic basis.</p>
+</section> 
+<section>       
+      <p> Orchestration:</p>
+       <p> Orchestration is a central to cloud operations. Orchestration converts requests from the service management layer and the monitoring, chargeback modules to appropriate action item which are then submitted to provisioning and configuration module for final closure. Orchestration updates the CMDB in the process.</p>
+</section>
+<section>
+        <p>Configuration Management Database (CMDB):</p>
+         <p>  It is a central configuration repository wherein all the meta data and configuration of different modules, resources are kept and updated in the real-time basis. The repository can then be accessed using standards protocols like SOAP by third-party software and integration components. All updates in CMDB happen in real time as requests get processed in cloud.</p>
+</section>
+<section>            
+         <p>  Cloud Life cycle Management Layer (CLM):</p>
+          <p> This layer handles the coordination of all other layers in cloud. All requests internal and external are addressed to the CLM layer first. CLM may internally route requests and actions to other layers for further processing.</p>
+</section> 
+<section>          
+         <p>  Service Catalog:</p>
+         <p> It is central to the definition of cloud, SC defines what kind of services the cloud is capable of providing and at what cost to the end user. SC is the first thing that is drafted before a cloud is architecture. The service management layer consults SC before it processes any request for a new resource.</p>
+</section>
+<fieldset style=" margin-top: 200px;">
+<span style="display: inline-flex; background-color: rgb(5, 86, 86); "  >
+    <P  style="margin-left:100px ;">:BABU BANARASI DAS  UNIVERSITY: </P> 
+    <P  style="margin-left:100px ;">:BABU BANARASI DAS  INSTITUTE    OF TECHNOLOGY AND MANAGMENT:</P> 
+    <P  style="margin-left:100px ;">:BABU BANARASI DAS  ENGINEERING  COLLEGE : </P>
+    <P  style="margin-left:100px ;">:BABU BANARASI DAS  COLLEGE      OF DENTAL SCIENCES: </P> 
+   <P   style="margin-left:100px ;">:BABU BANARASI DAS  NORTHERN     INDIAN INSTITUTE OF TECHNOLOGY :</P>
+   
+    </span>
+    <main style="background-color: rgb(102, 237, 61); display: inline-flex; margin-left:0px;" >
+    <section style="background-color: rgb(114, 125, 121);margin-left:0px;">
+    <video src="C:\Users\adity\Videos\Captures\Navigation Bar - Profile 1 - Microsoft​ Edge 2024-08-20 20-01-31.mp4" controls loop width="470px" height="500px"></video>
+    <video src="C:\Users\adity\Downloads\Untitled video - Made with Clipchamp (4).mp4" controls loop width="470px" height="500px"></video>
+    <video src="C:\Users\adity\Downloads\Untitled video - Made with Clipchamp (5).mp4" controls  loop width="470px" height="540px"></video>
+    </section> 
+</fieldset>
+    </main>
+    <img   style=" width: 700px; height:500px ;"   src="C:\Users\adity\Downloads\38884720834_52aa6e9aab_z.jpg">
+    <img   style=" width: 750px; height:500px ;"   src="C:\Users\adity\Downloads\24725537227_cbd67cc6c1_z.jpg">
+    <img   style=" width: 700px; height:500px ;"   src="C:\Users\adity\Downloads\24725536887_6f3e22953b_c.jpg">
+    <img   style=" width: 750px; height:500px ;"   src="C:\Users\adity\Downloads\24725537157_c7ef0bda88_z.jpg">
+    <img   style=" width: 700px; height:500px ;" src=" C:\Users\adity\OneDrive\Documents\WhatsApp Image 2024-07-15 at 10.33.33_44f1f832.jpg">
+    <img  style=" width: 750px; height:500px ;" src="C:\Users\adity\OneDrive\Documents\WhatsApp Image 2024-07-15 at 10.37.51_64632d52.jpg">
+    <img style=" width: 700px; height:500px ;"  src="C:\Users\adity\Downloads\Babu-Banarasi-Das-Dental-College-Lucknow.webp">
+    <img  style=" width: 750px; height:500px ;"  src="C:\Users\adity\Downloads\babu-banarasi-das-university-lucknow-205197.jpg">
+    <img style=" width: 700px; height:500px ;"   src="C:\Users\adity\Downloads\1624508145phpWE83AY_1280x960.jpg">
+    <img   style=" width: 750px; height:500px ;" src="C:\Users\adity\Downloads\310964617_410686334576320_2798293453700921339_n.jpg">
+  
+   </main>
+<fieldset style="margin-top:0px;">
+    <caption>
+        <img src="C:\Users\adity\OneDrive\Documents\Pictures\WhatsApp Image 2024-08-18 at 09.15.07_707d77df.jpg" style="margin-top:60px; border-radius: 50%; width: 300px; height: 300px; margin-left: 630px;">
+        <h1  style="font-size: 90%; margin-top: 30px; text-align:center ;">PROFILE</h1>
+        <P style=" text-align:center">CHANCELLOR:</P>
+        <P style="text-align: center"> VISHESH KUMAR PRAJAPATI</P>
+        <p style=" text-align: center;">CERTIFICATES:</p>
+        <p style=" text-align: center;">BACHELOR OF TECHNONOLOGY- SOFTWARE ENGINEERING</p>
+          </caption>
+
+<figcaption>
+    <div class=" LOGO" style="margin-left: 600px; display: grid; grid-template-columns: repeat(2,0fr);" >
+        <div style="background-color:red ;  height: 200px; width:200px  " class="red"></div> 
+        <div style="background-color: green ; height: 200px; width: 200px;"class="yellow"></div>
+        <div style="background-color : blue ; height: 200px; width: 200px; "class="green"></div>
+        <div style="background-color:yellow ; height: 200px;  width: 200px;"class="blue"></div>
+        </div>
+        <h1 style="text-align: center;">MIOCROSOFT</h1>        
+</figcaption>
+<h2 id="demo36"> EDUCATIONAL INSTITUTE REVIEW </h2> 
+<iframe  width="1500 px" height="300PX" src="https://bbdu.ac.in/"></iframe>
+<iframe  width="1500 px" height="300PX" src="https://bbdnitm.ac.in/"></iframe>
+<iframe  width="1500 px" height="300PX" src="https://bbdec.ac.in/"></iframe>
+</section>
+<fieldset style="background-color: rgb(15, 61, 2);">
+    <h1 style=" color: black; font-weight: bolder; text-align:center;  margin-top:30px; padding:10px ;">CALCULATOR</h1>
+<div class="main" style="background-color:rgb(15, 14, 15) ; margin-top: 30px;">
+  <input type="text" id = 'res'>
+  <div class="bttn">
+     <input type="button" value = 'C' onclick = "Clear()">
+     <input type="button" value = '%' onclick = "Solve('%')">
+     <input type="button" value = '←' onclick ="Back('←')">
+     <input type="button" value = '/' onclick = "Solve('/')">
+     <br>
+     <input type="button" value = '7' onclick = "Solve('7')">
+     <input type="button" value = '8' onclick = "Solve('8')">
+     <input type="button" value = '9' onclick = "Solve('9')">
+     <input type="button" value = 'x' onclick = "Solve('*')">
+     <br>
+     <input type="button" value = '4' onclick = "Solve('4')">
+     <input type="button" value = '5' onclick = "Solve('5')">
+     <input type="button" value = '6' onclick = "Solve('6')">
+     <input type="button" value = '-' onclick = "Solve('-')">
+     <br>
+     <input type="button" value = '1' onclick = "Solve('1')">
+     <input type="button" value = '2' onclick = "Solve('2')">
+     <input type="button" value = '3' onclick = "Solve('3')">
+     <input type="button" value = '+' onclick = "Solve('+')">
+     <br>
+     <input type="button" value = '00'onclick = "Solve('00')">
+     <input type="button" value = '0' onclick = "Solve('0')">
+     <input type="button" value = '.' onclick = "Solve('.')">
+     <input type="button" value = '=' onclick = "Result()">
+     </div>
+     </div>
+    </footer >
+</fieldset>
+</fieldset>
+<iframe  style="margin-top: 500px;"   src=
+"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47169.795533326396!2d77.38522794611738!3d28.51217402233223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce626851f7009%3A0x621185133cfd1ad1!2sGeeksforGeeks%20%7C%20Coding%20Classes!5e0!3m2!1sen!2sin!4v1712429105950!5m2!1sen!2sin"
+              width="100%" height="450" 
+              style="border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+<div class="media-domains" style="background-color: #1e1d1d; height: 500PX; margin-top: 100PX;" >
+    <li class="link_name"  style="background-color: #000; color: darkgray; text-align: center;padding: 34PX;">MEDIA-DOMAIN</li>
+      <img      style="width: 100px; height:100px ; margin-left:70PX ; margin-top: 150PX;"    src="C:\Users\adity\OneDrive\Documents\WhatsApp Image 2024-07-10 at 05.35.01_9f704b6e.jpg">
+      <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+      <img      style="width: 100px; height:100px ; margin-left: 70PX;"    src="C:\Users\adity\OneDrive\Documents\WhatsApp Image 2024-07-10 at 05.35.02_a0886cb1.jpg">
+      <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+      <img      style="width: 100px; height:100px ; margin-left: 70PX;"    src="C:\Users\adity\OneDrive\Documents\WhatsApp Image 2024-07-10 at 05.34.59_40a90f2e.jpg">
+      <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+      <img      style="width: 100px; height:100px ; margin-left: 70PX;"    src="C:\Users\adity\OneDrive\Documents\WhatsApp Image 2024-07-10 at 05.34.57_5108b259.jpg">
+      <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
+      <img      style="width: 100px; height:100px ; margin-left:70PX ;"    src="C:\Users\adity\OneDrive\Documents\WhatsApp Image 2024-07-10 at 05.34.58_e20ede7e.jpg">
+      <a href="#"><i class="fab fa-youtube"></i>youtube</a> 
+      <img      style="width: 100px; height:100px ; margin-left: 70PX;"    src="C:\Users\adity\OneDrive\Documents\WhatsApp Image 2024-07-10 at 05.34.58_0cb00b2f.jpg">
+      <a href="#"><i class="fab fa-github"></i>github</a>
+    </div>
+
+ <footer style="margin-top:500px ; background-color: #03173c;" >
+<ul> 
+ <li>Company</li>
+<li>About Us</li>
+<li>Careers</li>
+<li>In Media</li>
+<li>Contact Us</li>
+<li>Terms and Conditions</li>
+<li>Privacy Policy</li>
+<li>Copyright Policy</li>
+<li>Third-Party Copyright Notices</li>
+<li>Advertise with us</li>
+</ul>
+<ul>
+<li>Explore</li>
+<li>Job Fair For Students</li>
+<li>POTD: Revamped</li>
+<li>Python Backend LIVE</li>
+<li>Android App Development</li>
+<li>DevOps LIVE</li>
+<li>DSA in JavaScript</li>
+</ul>
+<ul>
+<li>Languages</li>
+<li>Python</li>
+<li>Java</li>
+<li>C++</li>
+<li>PHP</li>
+<li>GoLang</li>
+<li>SQL</li>
+<li>R Language</li>
+<li>Android Tutorial</li>
+</ul>
+<ul>
+<li>Data Structures</li>
+<li>Array</li>
+<li>String</li>
+<li>Linked List</li>
+<li>Stack</li>
+<li>Queue</li>
+<li>Tree</li>
+<li>Graph</li>
+</ul>
+<ul>
+<li>Algorithms</li>
+<li>Sorting</li>
+<li>Searching</li>
+<li>Greedy</li>
+<li>Dynamic Programming</li>
+<li>Pattern Searching</li>
+<li>Recursion</li>
+<li>Backtracking</li>
+</ul>
+<ul>
+<li>Web Development</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Bootstrap</li>
+<li>ReactJS</li>
+<li>AngularJS</li>
+<li>NodeJS</li>
+</ul>
+<ul>
+<li>Computer Science</li>
+<li>GATE CS Notes</li>
+<li>Operating Systems</li>
+<li>Computer Network</li>
+<li>Database Management System</li>
+<li>Software Engineering</li>
+<li>Digital Logic Design</li>
+<li>Engineering Maths</li>
+</ul>
+<ul>
+<li>Python</li>
+<li>Python Programming Examples</li>
+<li>Django Tutorial</li>
+<li>Python Projects</li>
+<li>Python Tkinter</li>
+<li>OpenCV Python Tutorial</li>
+<li>Python Interview Question</li>
+</ul>
+<ul>
+<li>Data Science & ML</li>
+<li>Data Science With Python</li>
+<li>Data Science For Beginner</li>
+<li>Machine Learning Tutorial</li>
+<li>Maths For Machine Learning</li>
+<li>Pandas Tutorial</li>
+<li>NumPy Tutorial</li>
+<li>NLP Tutorial</li>
+<li>Deep Learning Tutorial</li>
+</ul>
+<ul>
+<li>DevOps</li>
+<li>Git</li>
+<li>AWS</li>
+<li>Docker</li>
+<li>Kubernetes</li>
+<li>Azure</li>
+<li>GCP</li>
+</ul>
+<ul>
+<li>Competitive Programming</li>
+<li>Top DSA for CP</li>
+<li>Top 50 Tree Problems</li>
+<li>Top 50 Graph Problems</li>
+<li>Top 50 Array Problems</li>
+<li>Top 50 String Problems</li>
+<li>Top 50 DP Problems</li>
+<li>Top 15 Websites for CP</li>
+</ul>
+<ul>
+<li>System Design</li>
+<li>What is System Design</li>
+<li>Monolithic and Distributed SD</li>
+<li>Scalability in SD</li>
+<li>Databases in SD</li>
+<li>High Level Design or HLD</li>
+<li>Low Level Design or LLD</li>
+<li>Top SD Interview Questions</li>
+</ul>
+<ul>
+<li>Interview Corner</li>
+<li>Company Preparation</li>
+<li>Preparation for SDE</li>
+<li>Company Interview Corner</li>
+<li>Experienced Interview</li>
+<li>Internship Interview</li>
+<li>Competitive Programming</li>
+<li>Aptitude</li>
+</ul>
+<ul>
+<li>GfG School</li>
+<li>CBSE Notes for Class 8  </li>
+<li>CBSE Notes for Class 9 </li>
+<li>CBSE Notes for Class 10 </li>
+<li>CBSE Notes for Class 11 </li>
+<li>CBSE Notes for Class 12 </li>
+<li>English Grammar</li>
+</ul>
+<ul>
+<li>Commerce</li>
+<li>Accountancy</li>
+<li>Business Studies</li>
+<li>Microeconomics</li>
+<li>Macroeconomics</li>
+<li>Statistics for Economics</li>
+<li>Indian Economic Development</li>
+</ul>
+<ul>
+<li>UPSC</li>
+<li>Polity Notes</li>
+<li>Geography Notes</li>
+<li>History Notes</li>
+<li>Science and Technology Notes</li>
+<li>Economics Notes</li>
+<li>Important Topics in Ethics</li>
+<li>UPSC Previous Year Papers</li>
+</ul>
+<ul>
+<li>SSC/ BANKING</li>
+<li>SSC CGL Syllabus</li>
+<li>SBI PO Syllabus</li>
+<li>SBI Clerk Syllabus</li>
+<li>IBPS PO Syllabus</li>
+<li>IBPS Clerk Syllabus</li>
+<li>Aptitude Questions</li>
+<li>SSC CGL Practice Papers</li>
+</ul>
+<ul>
+<li>Write & Earn</li>
+<li>Write an Article</li>
+<li>Improve an Article</li>
+<li>Pick Topics to Write</li>
+<li>Write Interview Experience</li>
+<li>Internships</li>
+<li>Video Internship</li>
+</ul>
+ </footer>
+</fieldset>
+ <div class="demo12" style="background-color: #3f3b3b;">
+ Copyright@visheshk.p 
+ </div>
+</body>
+</html>
