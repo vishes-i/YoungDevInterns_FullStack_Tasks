@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0" />
+   <style>
+    
+
+ * {
+     font-family: Georgia, Times, "Times New Roman", serif;
+ }
+
+ .quiz,
+ .scores {
+     margin: 50px auto 0 auto;
+     max-width: 400px;
+ }
+
+ #top {
+     color: green;
+ }
+
+ .containerNew {
+     border: 5px solid;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     height: 580px;
+     width: 50%;
+     transform: translate(-50%, -50%);
+     padding: 10px;
+ }
+
+ p {
+     margin: 15px 15px;
+ }
+ button {
+     display: inline-block;
+     margin: 10px;
+     cursor: pointer;
+     color: #fff;
+     background-color: #52865a;
+     border-radius: 5px;
+     border: 0;
+     padding: 20px;
+ }
+
+ button:hover {
+     background-color: #2a8d12;
+ }
+
+ .options button {
+     display: block;
+ }
+
+ input[type="text"] {
+     font-size: 100%;
+ }
+   </style>
+   
+    <title>Code Quiz</title>
+</head>
+
+<body style="background-color: rgb(17, 117, 216);">
+   
+    <div class="containerNew" style=" background-color: aquamarine;">
+        <H1 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bolder;">THANK YOU COMPELETING-QUIZ</H1>
+        <header>
+            <div>
+                <a href="./highscore.html">
+                    <button class="scores-header" 
+                            id="view-high-scores">
+                        REVIEW ANSWER
+                    </button>
+                </a>
+            </div>
+
+            <div class="accuracy">
+                <p>
+                    YOUR ACCURACY:
+                    <span id="accuracy">
+                        000
+                    </span>
+                </p>
+            </div>
+            
+        </header>
+
+                    <h1 id="top">
+                    GENERAL  QUESTION  COMPUTER SCIENCE ENGINEERING
+                    </h1>
+                    <h1>
+                       CODING QUIZ
+                    </h1>
+                    <p>
+                        Try to answer the following
+                        code-related questions with
+                        in the time limit. Keep in
+                        mind that incorrect answers
+                        will penalize your score/time
+                        by sixty seconds!
+                    </p>
+                    <button id="start">
+                       <a  style="color:black ; text-decoration: none;"   href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/view.html">VEIW YOUR HIGH SCORE<a>
+                    </button>
+                </div>
+            </div>
+            <button onclick="history.back()" style="background-color: black; color: #fff;">
+     PREVIOUS-PAGE
+            </button>
+</body>
+
+</html
