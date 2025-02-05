@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style2345.css"/>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Georgia, serif;
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main p {
+  margin-bottom: 0;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  margin: 0 2rem;
+}
+
+.content-area {
+  width: calc(66.6% - 1rem);
+  margin-right: 1rem;
+  float: left;
+}
+
+.sidebar {
+  width: 33.3%;
+  float: right;
+  padding: 1rem;
+}
+
+.main-header {
+  height: 3rem;
+}
+
+.logo {
+  width: 20%;
+  float: left;
+  height: 100%;
+  line-height: 3rem;
+}
+
+.main-menu {
+  width: 79%;
+  float: right;
+  height: 100%;
+  line-height: 3rem;
+  text-align: right;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__item {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
+
+.main-menu .main-menu__item:last-of-type {
+  margin-right: 0;
+}
+
+.content-area-wrapper, .sponsors-wrapper, .main-header {
+  margin-bottom: 2rem;
+}
+
+.sponsors {
+  display: table;
+  border-spacing: 1rem;
+  width: 100%;
+}
+
+.sponsor {
+  width: 20%;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 0.625rem;
+}
+
+.sponsor img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media all and (max-width: 992px) {
+  .container {
+    margin: 0 1rem;
+  }
+  
+  .sponsors {
+    border-spacing: 0.5rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .content-area, .sidebar {
+    float: none;
+  }
+
+  .content-area {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .sidebar {
+    width: 66.6%;
+  }
+  
+  .sponsors, .sponsor {
+    display: block;
+  }
+
+  .sponsor {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .main-menu, .logo {
+    float: none;
+    width: 100%;
+  }
+
+  .main-menu {
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  .main-header {
+    height: auto;
+  }
+
+  .logo, .main-menu {
+    line-height: initial;
+  }
+}    
+a{
+    text-decoration: none;
+    color: #000;
+}
+ img{max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+a:hover{
+    color: red;
+}
+</style>
+<body>
+<div class="container">
+  <header class="main-header clearfix">
+    <section class="logo" style="background-color: rgb(120, 120, 230); border: solid 4px black;" >
+      <h1><a href="#">BookSite</a></h1>
+    </section>
+
+    <nav class="main-menu" style="background-color: rgb(116, 116, 169); border: solid 4px #000;">
+      <ul style="color: black; overflow: hidden; text-decoration: none;">
+        <li class="main-menu__item"><a href="#">Our clients</a></li>
+        <li class="main-menu__item"><a href="#">Products</a></li>
+        <li class="main-menu__item"><a href="#">Contact</a></li>
+        <li class="main-menu__item"><a href="#">Query</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content-area-wrapper clearfix">
+    <main class="content-area" style="background-color: rgb(245, 244, 242); color: rgb(2, 42, 42);">
+      <h2 style="color: black; text-align: center; background-color: aqua;">Welcome BookSite!</h2>
+<h3>Graduate Aptitude Test in Engineering (GATE)</h3>
+      <p>
+        Graduate Aptitude Test in Engineering (GATE) is a national-level examination that primarily tests the comprehensive understanding of various undergraduate subjects in Engineering/ Technology/ Architecture/ Science/ Commerce/ Arts/ Humanities. GATE 2025 will be a computer-based test (CBT) and is being organized by Indian Institutes of Technology Roorkee. The examination will be conducted by IISc Bengaluru and seven IITs (IIT Bombay, IIT Delhi, IIT Guwahati, IIT Kanpur, IIT Kharagpur, IIT Madras and IIT Roorkee), on behalf of the National Coordination Board - GATE, Department of Higher Education, Ministry of Education (MoE), Government of India (GoI).
+
+
+      </p>
+
+      <p>
+        Qualifying in GATE does not guarantee admission, scholarship, or a job. Admission to any institute is fully dependent on the admitting institute’s criteria for educational qualification. GATE qualification does not assure a public sector undertaking (PSU) job. No responsibility is assumed for admission, scholarship, or a job 
+      </p>
+    </main>
+
+    <aside class="sidebar" style="background-color: rgb(247, 223, 194); color: #476a48;">
+      <h3 style="color: rgb(4, 244, 244); text-align: center; background-color: #036c05;">CONTACT- DETAILS</h3>
+
+      <ul>
+        <li>GATE-JAM Office</li>
+        <li>  
+            Indian Institute of Technology Roorkee
+            Roorkee - 247667 (Uttarakhand), INDIA</li>
+        <li>  helpdesk.gate@iitr.ac.in</li>
+        <li>  01332 284531
+        </li>
+        <li>.GATE Papers <br>
+            .Eligibility Criteria<br>
+           . FAQs</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section class="sponsors-wrapper clearfix">
+    <h2 style="background-color: rgb(6, 163, 111); border:solid 4px black ; text-align: center;">Our sponsors</h2>
+
+    <section class="sponsors">
+      <figure class="sponsor">
+        <img src="https://th.bing.com/th/id/OIP.Tsk0idfA-5ykvCfC0r_ZyAAAAA?w=171&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+      </figure>
+
+      <figure class="sponsor">
+        <img src="https://th.bing.com/th/id/OIP.SHPXUoWOFP7S0PL3bg8kIAAAAA?rs=1&pid=ImgDetMain">
+      </figure>
+
+      <figure class="sponsor">
+        <img src="https://th.bing.com/th/id/OIP.-XLHCaDPnMwh4C9-rTOI-QHaHW?rs=1&pid=ImgDetMain">
+      </figure>
+
+      <figure class="sponsor">
+        <img src="https://th.bing.com/th/id/OIP.YPxcVDItdS6ZHOv2LE5h7AHaHQ?rs=1&pid=ImgDetMain">
+      </figure>
+
+      <figure class="sponsor">
+        <img src="https://th.bing.com/th/id/OIP.PDFvKNbCl1Ej_isMksJW_QHaHa?pid=ImgDet&w=184&h=184&c=7&dpr=1.3">
+      </figure>
+    </section>
+
+  </section>
+<hr>
+<H1 style="text-align: center; background-color: darkcyan; color: #000;">ADDITIONAL STUFF</H1>
+</div>
+<div class="grid-wrapper">
+	<div>
+		<img src="https://image4.slideserve.com/7506945/guide-to-gate-exam1-l.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://www.knowyourtutor.com/blog/wp-content/uploads/2018/10/GATE-Exam-Preparation-tipis.jpg" alt="" />
+	</div>
+	<div class="tall">
+		<img src="https://th.bing.com/th/id/OIP.RgMWfq3Kz-YPkY8AcZCafAHaJk?rs=1&pid=ImgDetMain" alt="">
+	</div>
+	<div class="wide">
+		<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4erxGft-0LAFB6z_gJ96ybJ3f6ein_j2YSUniSYATvk-U6DB0XSFJasHm2fPXfC73xFLC2S1_IZYAZhw7umbk8Vj77yrWghRRCCcxNyNSoZPGnjJuJubC9bxzPbuC-HLM0Q1CJMyLvHs_-jTJc-yASCvLiiaHv9zN77toNo8Zyp8-TN8Sqe4OmVlYj3FI/w1200-h630-p-k-no-nu/photo_2024-08-04_17-48-18.jpg" alt="" />
+	</div>
+	<div>
+		<img src=" https://i.pinimg.com/originals/1d/5f/64/1d5f645a7511279ff0cee3ba53176a34.png" alt="" />
+	</div>
+	<div class="tall">
+		<img src="https://www.westmelton.school.nz/images/gifted_talented_0047.png" alt="" />
+	</div>
+	<div class="big">
+		<img src="https://www.careerindia.com/img/2020/03/gateresult2020-1583844487.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://jobingov.com/wp-content/uploads/2020/09/gate-exam-1024x576.jpg" alt="" />
+	</div>
+	<div class="wide">
+		<img src="https://th.bing.com/th/id/OIP.aBc2q2kltjyENQ__FcAX2QHaHP?rs=1&pid=ImgDetMain" alt="" />
+	</div>
+	<div class="big">
+		<img src="https://th.bing.com/th/id/OIP.g4PlMhvckd-y2rbUiKr9MwHaFj?rs=1&pid=ImgDetMain" alt="" />
+	</div>
+	<div class="tall">
+		<img src="https://i.ytimg.com/vi/A7bz2KUw2cM/maxresdefault.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://th.bing.com/th?id=OIP.u-Fyma2g9l48OdDW827-JwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="" />
+	</div>
+	<div>
+		<img src="https://th.bing.com/th?id=OIP.fv7-TEdyp5HrGs-mM3dmkwHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="" />
+	</div>
+	<div>
+		<img src="https://wallpaperaccess.com/full/8410991.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://th.bing.com/th/id/OIP.RCV2HK8GK4tqa6m4Xy2-5wHaER?rs=1&pid=ImgDetMain" alt="" />
+	</div>
+	<div class="wide">
+		<img src="https://www.iitk.ac.in/new/images/slider/gate-2023.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://i.ytimg.com/vi/kWHcMeE4C5M/maxresdefault.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://thumbs.dreamstime.com/z/indian-institute-technology-bombay-entrance-gate-board-entry-iit-logo-front-view-india-s-top-engineering-264169212.jpg" alt="" />
+	</div>
+	<div class="wide">
+		<img src="https://manage.nakshewala.com/assets/gallery/large/gallrey5db2c560a9ec095x65_l.jpg" alt="" />
+	</div>
+	<div>
+		<img src="C:\Users\adity\Downloads\OIP.jpeg" alt="" />
+	</div>
+    <div>
+		<img src="C:\Users\adity\Downloads\OSK.jpeg" alt="" />
+	</div>
+    <div>
+        <img src="C:\Users\adity\Downloads\Computer-Science.jpg" alt="">
+    </div>
+</div>
+
+<footer class="footer" style="background-color: black; color: antiquewhite; padding:12px ;">
+    <p style="text-align: center;">
+        GATE 2025, IIT Roorkee © 2024. All Rights Reserved.
+    </p>
+  </footer>
+</body>
+</html>
