@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>contact  form</title>
+<style>
+    * {
+      background-color: #61ea68;
+    }
+
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; 
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+
+.hide-md-lg {
+  display: none;
+}
+
+.bottom-container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+ 
+  .vl {
+    display: none;
+  }
+
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+* {box-sizing: border-box}
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color:purple;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+    </style>
+    <body>
+        <div class="container">
+            <form action="/action_page.php">
+              <div class="row">
+                <h2 style="text-align:center">Login with Social Media or Manually</h2>
+                <div class="vl">
+                  <span class="vl-innertext">or</span>
+                </div>
+          
+                <div class="col">
+                  <a href="https;//www,Facebook.com" class="fb btn">
+                    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                  </a>
+                  <a href="#" class="twitter btn">
+                    <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                  </a>
+                  <a href="#" class="google btn">
+                    <i class="fa fa-google fa-fw"></i> Login with Google+
+                  </a>
+                </div>
+          
+                <div class="col">
+                  <div class="hide-md-lg">
+                    <p>Or sign in manually:</p>
+                  </div>
+          
+                  <input type="text" name="username" placeholder="Username" required>
+                  <input type="password" name="password" placeholder="Password" required>
+                  <button style="background-color: blueviolet;">
+                 <a  style="text-decoration: none; text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bolder; font-size: x-large; background-color: blueviolet;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/instruction.html">LOGIN</a>
+                </button>
+                </div>
+          
+              </div>
+            </form>
+          </div>
+          
+          <div class="bottom-container">
+            <div class="row">
+              <div class="col" style="display: inline-flex; width:1500px ; margin-left:50px ;">
+                <a href="file:///C:/Users/adity/OneDrive/Documents/Desktop/codsoft%20internship/cognifyz/enroll.html" style="background-color: #067c0a; width: 685px; height: 50PX; color: #000; font-family: 'Times New Roman', Times, serif; font-weight: bolder;" class="btn">Sign In</a>
+             <a href="vijayk.html"  style="background-color:#dd1212; width:685px ; height: 50PX; color: #000; font-family: 'Times New Roman', Times, serif; font-weight: bolder;" class="btn">Cancel</a>
+              </div>
+            </div>
+          </div>
+          
+          
+    </body>
+
+    </html>
