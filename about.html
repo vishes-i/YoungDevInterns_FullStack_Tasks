@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+
+    .grid {
+        max-width: 1124px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: .2fr 1fr 1fr 1fr 1fr .2fr;
+        grid-template-rows: auto minmax(230px, min-content) minmax(70px, 120px) 130px auto;
+        grid-auto-rows: auto;
+        grid-gap:1em;
+    }
+
+    header, footer {
+        grid-column: 1 / 7;
+    }
+
+    nav {
+        grid-column: 2;
+        grid-row: 3 / span 2;
+        display: flex;
+        flex-direction: column;
+        a {
+            text-decoration: none;
+            color:#EE5E30;
+            font-weight: 600;
+            margin-bottom:1em;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .picasso-1 {
+        grid-column: 2 / 4;
+        grid-row: 2;
+    }
+
+    .figure-1 {
+        grid-column: 4 / span 2;
+        grid-row: 2 / span 2;
+        text-align: right;
+        position: relative;
+        &:before {
+            content: "";
+            width: 450px;
+            height: 450px;
+            background: linear-gradient(to bottom,#F49931,#EE5E30);
+            position: absolute;
+            z-index: -1;
+            right: 35%;
+            top: 15%;
+            animation: blob 7s linear infinite alternate;
+        }
+    }
+
+    figure {
+        margin:1em;
+        img {
+            max-width: 100%;
+        }
+        figcaption {
+            font-size: .8em;
+            font-style: italic;
+            margin:1em;
+        }
+    }
+
+
+    .figure-2 {
+        grid-column: 3 / span 3;
+        grid-row: 4 / span 2;
+        position: relative;
+        margin-bottom: 0;
+        figcaption {
+            position: absolute;
+            background: white;
+            bottom:1em;
+            right:1em;
+            padding:1em;
+            border-radius: 50px;
+        }
+    }
+
+
+    .sidebar-left {
+        grid-column: 2;
+        grid-row: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        background: url('https://www.pablopicasso.org/images/paintings/the-old-guitarist.jpg');
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        z-index: 1;
+        line-height: 1.1;
+        padding:1em;
+        &:after {
+            content: "";
+            width: 100%;
+            height: 60%;
+            background: linear-gradient(to bottom, transparent, white);
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+        }
+
+    }
+
+
+    .btn {
+        text-decoration: none;
+        color:#EE5E30;
+        padding:1em;
+        border-radius: 5px;
+        border: 2px solid #EE5E30;
+        font-weight: 600;
+        transition: all .4s ease-in-out;
+        &:hover {
+            background:#EE5E30;
+            color: white;
+        }
+    }
+
+    @keyframes blob {
+        0% {
+            border-radius: 30% 70% 53% 47% / 53% 44% 56% 47%;
+        }
+
+        100% {
+            border-radius: 60% 40% 30% 70% / 64% 44% 56% 36% ;
+        }
+    }
+
+    body {
+        color:#1F2329;
+        line-height: 1.5;
+        overflow-x: hidden;
+    }
+
+
+    header, footer {
+        text-align: center;
+        padding-top:2em;
+        text-align:center;
+        font-size: .8em;
+        position: relative;
+        a {
+            color:#EE5E30;
+        }
+    }
+</style>
+<body>
+<img src="https://hireintern.pk/wp-content/uploads/2023/05/hireintern-home-img-1.jpg" width="400px">
+<img src="https://www.internee.pk/assets/nic-DRZpfK9-.png" width="400px">
+<img src="https://www.internee.pk/moit.webp">
+<div class="grid" style="background-color: #0f5132">
+    <header>
+        <img src="https://www.internee.pk/LMS%20video.gif" alt="Signature"/>
+    </header>
+
+    <figure class="figure-1">
+        <img src="https://pbs.twimg.com/profile_images/1666486089329307649/r8TQbdXI_400x400.jpg" alt="Picture of Picasso"/>
+        <figcaption>About interns(mentor)</figcaption>
+    </figure>
+
+    <article class="picasso-1">
+        <h1>Meet your Mentor</h1>
+        <p><b>Shahzaib Khan</b>  is a Technopreneur, specialized in using cutting-edge web technologies & social-media strategies to bring products & campaigns from concept to a reality.
+
+            By profession a Computer & Information System Engineer, who has been building & implementing Information Systems for the last 10 years.
+
+            Learn more @LinkedIn
+
+        </p>
+    </article>
+
+
+    <nav>
+        <a href="#">Masterpieces</a>
+        <a href="#">Famous mentor</a>
+        <a href="#">software engineer</a>
+        <a href="#">Quotes</a>
+        <a href="#">Fun Facts</a>
+        <a href="#">Biography</a>
+    </nav>
+
+    <figure class="figure-2">
+        <img src="https://interns.pk/img/photos/screen-demo.gif" alt="Interns Pakistan
+Dec 05.2012"/>
+        <figcaption>Hey there.. I am Shahzaib...
+            You can call me Shah
+            I am a Technopreneur, specialized in using cutting edge web technologies and social-media strategies who bring products and campaigns from concept to a reality.
+
+            By profession I am a Computer and Information System Engineer, who has been building and implementing Information Systems for the last 10 years.
+
+            A brilliant student and research scientist who has been awarded by several institutions for his ideas and research which includes IEEEP for his research on mobile computing.
+
+            Mission for life:
+            To enable individuals globally to lead successful, meaningful and fulfilling lives.
+
+            Currently Madly in Love With: Interns Pakistan / OnePush / Pulse
+
+            I Love Challenges, If you have something creative and challenging.
+            You can contact me at:
+            Facebook: https://fb.com/shahzaib198
+            Twitter: https://twitter.com/shahzaib_khan
+            LinkedIn: https://linkedin.com/in/shahzaibkhan/
+
+            Thank You!</figcaption>
+    </figure>
+
+    <aside class="sidebar-left">
+        <h2>Show Your Support</h2>
+        <a class="btn" href="#">Our Store</a>
+    </aside>
+
+    <footer>
+        <p>Content extracted from <a href="https://www.ShahzaibKhan.org/">ShahzaibKhan.org</a></p>
+    </footer>
+</div>
+</body>
+</html>
